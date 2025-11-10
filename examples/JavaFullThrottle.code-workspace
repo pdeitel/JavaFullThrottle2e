@@ -1,0 +1,92 @@
+{
+  "folders": [
+    { "path": "ch02/fig02_01" },
+    { "path": "ch02/fig02_01b" },
+    { "path": "ch02/fig02_01c" },
+    { "path": "ch02/fig02_05" },
+
+    { "path": "ch03/fig03_05" },
+
+    { "path": "ch04/fig04_11" },
+
+    { "path": "ch05/fig05_04" },
+    { "path": "ch05/fig05_05" },
+    { "path": "ch05/fig05_06" },
+
+    { "path": "ch06/fig06_01" },
+    { "path": "ch06/fig06_02" },
+    { "path": "ch06/fig06_08" },
+    { "path": "ch06/fig06_09" },
+    { "path": "ch06/fig06_10" },
+    { "path": "ch06/fig06_11" },
+    { "path": "ch06/fig06_14" },
+
+    { "path": "ch07/fig07_19" },
+    { "path": "ch07/fig07_20" },
+    { "path": "ch07/fig07_21" },
+    { "path": "ch07/fig07_22" },
+
+    { "path": "ch08/fig08_07-09" },
+    { "path": "ch08/fig08_14-15" },
+    { "path": "ch08/fig08_25" },
+    { "path": "ch08/fig08_26" },
+    { "path": "ch08/fig08_27" },
+
+    { "path": "ch09/fig09_06_09" },
+    { "path": "ch09/fig09_10-13" },
+
+    { "path": "ch10/fig10_02" },
+
+    { "path": "ch12/fig12_04" },
+    { "path": "ch12/fig12_05" },
+    { "path": "ch12/fig12_06-07" },
+    { "path": "ch12/fig12_16" },
+
+    { "path": "ch14/fig14_01" },
+    { "path": "ch14/fig14_02" },
+    { "path": "ch14/fig14_03" },
+    { "path": "ch14/fig14_03_Modified" },
+    { "path": "ch14/fig14_04" },
+    { "path": "ch14/fig14_05" },
+    { "path": "ch14/fig14_08-09" },
+
+    { "name": "TipCalculator", "path": "ch15/TipCalculator" },
+
+    { "name": "ColorChooser", "path": "ch16/ColorChooser" },
+    { "name": "CoverViewer", "path": "ch16/CoverViewer" },
+    { "name": "CoverViewerCustomListView", "path": "ch16/CoverViewerCustomListView" },
+
+    { "path": "ch18/fig18_01" },
+    { "path": "ch18/fig18_02" },
+    { "path": "ch18/fig18_03-04" },
+    { "path": "ch18/fig18_05" },
+    { "path": "ch18/fig18_06" },
+
+    { "path": "ch19/fig19_01" },
+    { "path": "ch19/fig19_02" },
+    { "path": "ch19/fig19_03" },
+    { "path": "ch19/fig19_04" },
+    { "path": "ch19/fig19_05" },
+    { "path": "ch19/fig19_06" },
+    { "path": "ch19/fig19_07" },
+    { "path": "ch19/fig19_08" },
+    { "path": "ch19/fig19_09" },
+    { "path": "ch19/fig19_10" },
+    { "path": "ch19/fig19_11" },
+    { "path": "ch19/fig19_12" },
+    { "path": "ch19/fig19_13" }
+  ],
+  "settings": {
+    "java.project.referencedLibraries": [
+      "../../libs/**/*.jar",
+      "../../libs/javafx-sdk-25.0.1/lib/**/*.jar"
+    ],
+    "java.project.sourcePaths": [
+      "."
+    ],
+    "java.autobuild.enabled": false,
+    "java.configuration.updateBuildConfiguration": "disabled",
+    "java.server.launchMode": "Standard",
+    "java.debug.settings.console": "integratedTerminal"
+  }
+}

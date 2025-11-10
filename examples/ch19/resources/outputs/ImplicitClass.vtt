@@ -1,0 +1,89 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:07.700
+In this video, we'll take another look at the JEP 463 capabilities, and in particular,
+
+00:00:07.700 --> 00:00:12.200
+we're going to demonstrate an implicitly declared class.
+
+00:00:12.200 --> 00:00:16.760
+So basically, we're going to have a source code file with no class definition at all
+
+00:00:16.760 --> 00:00:17.760
+in it.
+
+00:00:17.760 --> 00:00:22.879
+We'll just have a main method, and in this case, I also added a second method just to
+
+00:00:22.879 --> 00:00:29.400
+show that you can actually have now in Java a file that just contains a bunch of method
+
+00:00:29.400 --> 00:00:35.040
+definitions, which is more like what you would write in perhaps a C program or a Python
+
+00:00:35.040 --> 00:00:37.320
+program, for example.
+
+00:00:37.320 --> 00:00:43.500
+So for this demo, we've got a file called implicitclass.java, and it has an instance
+
+00:00:43.500 --> 00:00:45.160
+main method in it.
+
+00:00:45.160 --> 00:00:48.900
+Now I'm going to go ahead and open this in IntelliJ once again.
+
+00:00:48.900 --> 00:00:54.540
+This is the second project in the What's New in Java Lesson 2 related examples.
+
+00:00:54.540 --> 00:00:57.400
+So I'll go ahead and select that and click Open.
+
+00:00:57.400 --> 00:01:03.900
+And for this version of the demonstration, we have an instance main method.
+
+00:01:03.900 --> 00:01:06.339
+Notice there's no class definition in here.
+
+00:01:06.339 --> 00:01:11.779
+We have an instance main method that calls displayMessage, and displayMessage in turn
+
+00:01:11.779 --> 00:01:17.919
+is going to display the same string we showed you in the last example, welcome to Java programming.
+
+00:01:17.919 --> 00:01:24.019
+So if I go ahead and run the main method here, you can see that indeed it just works.
+
+00:01:24.019 --> 00:01:26.139
+There is no class definition here.
+
+00:01:26.160 --> 00:01:33.279
+So what's happening is Java is automatically creating an unnamed class that wraps these
+
+00:01:33.279 --> 00:01:39.480
+capabilities inside of it, and main is in fact able to see other method definitions
+
+00:01:39.480 --> 00:01:45.519
+within this source code file and invoke them directly as I demonstrated here.
+
+00:01:45.519 --> 00:01:50.699
+And just like I did in the previous example, I could go out to the command line and run
+
+00:01:50.699 --> 00:01:53.720
+implicitclass.java directly.
+
+00:01:53.720 --> 00:01:59.199
+But again, this is a preview feature, so you will need the command line options that
+
+00:01:59.199 --> 00:02:01.919
+I showed you in that last video.
+
+00:02:01.919 --> 00:02:07.800
+The enablePreview and the source options if you're going to run the file directly, and
+
+00:02:07.800 --> 00:02:13.039
+then if you're going to compile then run the file, you need the enablePreview and source
+
+00:02:13.039 --> 00:02:18.880
+options for the compiler, and the enablePreview option for the Java runtime command.
+
