@@ -7,12 +7,12 @@ public class SalariedEmployee extends Employee {
 
    // constructor                                
    public SalariedEmployee(String name, BigDecimal salary) {
+      super(name); 
+
       // if salary is invalid throw exception
       if (salary.compareTo(BigDecimal.ZERO) < 0) { 
          throw new IllegalArgumentException("salary must be >= 0.0");
       }   
-
-      super(name); // before Java 25 this was required to come first
 
       this.salary = salary;                                    
    } 

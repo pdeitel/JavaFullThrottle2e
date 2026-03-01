@@ -22,7 +22,8 @@ public class RecordPatternMatchingDemo2 {
       return switch (shape) {
          case Rectangle(var length, var width) -> 2 * length + 2 * width;
          case Circle(var radius) -> 2 * Math.PI * radius;
-         default -> throw new IllegalArgumentException("invalid type"); 
+         default -> throw new IllegalArgumentException(
+            "invalid type " + shape.getClass().getName()); 
       };
    }
 }

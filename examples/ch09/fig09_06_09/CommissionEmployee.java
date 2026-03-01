@@ -9,6 +9,8 @@ public class CommissionEmployee extends Employee {
    // constructor
    public CommissionEmployee(String name, 
       BigDecimal grossSales, BigDecimal commissionRate) {
+      super(name);
+
       // if grossSales is invalid throw exception
       if (grossSales.compareTo(BigDecimal.ZERO) < 0) { 
          throw new IllegalArgumentException("gross sales must be >= 0.0");
@@ -20,8 +22,6 @@ public class CommissionEmployee extends Employee {
          throw new IllegalArgumentException(
             "commission rate must be > 0.0 and < 1.0");
       }   
-
-      super(name); // before Java 25 this was required to come first
 
       this.grossSales = grossSales;
       this.commissionRate = commissionRate;

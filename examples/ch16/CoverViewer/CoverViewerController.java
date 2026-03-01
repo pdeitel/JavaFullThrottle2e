@@ -1,5 +1,6 @@
 // Fig. 16.6: CoverViewerController.java
 // Controller for Cover Viewer application
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;

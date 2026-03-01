@@ -1,5 +1,5 @@
 // Fig. 14.9: ProcessingEmployees.java
-// Processing streams of Employee objects. [I cut some of book example]
+// Processing streams of Employee objects.
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;               
@@ -93,7 +93,7 @@ public class ProcessingEmployees {
             employeesInDepartment.forEach(                            
                employee -> System.out.printf("   %s%n", employee));   
          }                                                            
-      );                                                              
+      );                                                                  
    } 
 } 
  

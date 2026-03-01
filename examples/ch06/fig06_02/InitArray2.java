@@ -1,4 +1,4 @@
-// Fig. 6.2: InitArray2.java
+// Fig. 6.2: InitArray.java
 // Initializing the elements of an array with an array initializer.
 
 public class InitArray2 {

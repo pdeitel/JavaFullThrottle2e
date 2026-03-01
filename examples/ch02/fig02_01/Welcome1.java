@@ -5,8 +5,8 @@ public class Welcome1 {
    // main method begins program execution 
    public static void main(String[] args) {
       System.out.println("Welcome to Java Programming!");
-   } 
-} 
+   } // end method main
+} // end class Welcome1
 
 
 

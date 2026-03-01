@@ -1,4 +1,4 @@
-// Fig. 6.10: InitArray3.java
+// Fig. 6.10: InitArray.java
 // Initializing two-dimensional arrays.
 
 public class InitArray3 {

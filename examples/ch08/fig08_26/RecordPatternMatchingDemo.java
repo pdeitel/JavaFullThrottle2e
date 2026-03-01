@@ -13,6 +13,7 @@ public class RecordPatternMatchingDemo {
          r, getPerimeter(r));
       System.out.printf("Circle c : %s%nperimeter: %.2f%n", 
          c, getPerimeter(c));
+      getPerimeter("hello");
    }
          
    // uses pattern-matching switch to calculate perimeter of a 
@@ -21,7 +22,8 @@ public class RecordPatternMatchingDemo {
       return switch (shape) {
          case Rectangle r -> 2 * r.length() + 2 * r.width();
          case Circle c -> 2 * Math.PI * c.radius();
-         default -> throw new IllegalArgumentException("invalid type"); 
+         default -> throw new IllegalArgumentException(
+            "invalid type " + shape.getClass().getName()); 
       };
    }
 }

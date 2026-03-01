@@ -38,9 +38,6 @@ public class DivideByZeroWithExceptionHandling {
             System.out.printf(                                          
                "Zero is an invalid denominator. Try again.%n%n");   
          }
-         finally { // executes regardless of what occurs in try...catch
-            System.out.println("[Demo only] finally always executes\n");  
-         }
       }
    } 
 } 

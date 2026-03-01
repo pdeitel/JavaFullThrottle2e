@@ -1,4 +1,4 @@
-// Fig. 13.13: CoverViewer.java
+// Fig. 13.13: CoverViewerCustomListView.java
 // Class that loads and displays the CoverViewer's GUI.
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -10,7 +10,7 @@ public class CoverViewerCustomListView extends Application {
    @Override
    public void start(Stage stage) throws Exception {
       Parent root = 
-         FXMLLoader.load(getClass().getResource("CoverViewer.fxml"));
+         FXMLLoader.load(getClass().getResource("CoverViewerCustomListView.fxml"));
       
       var scene = new Scene(root);
       stage.setTitle("Cover Viewer");
