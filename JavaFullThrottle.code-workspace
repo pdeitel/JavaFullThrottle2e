@@ -1,0 +1,79 @@
+{
+  "folders": [
+    {
+      "path": "examples/ch02"
+    },
+    {
+      "path": "examples/ch03"
+    },
+    {
+      "path": "examples/ch04"
+    },
+    {
+      "path": "examples/ch05"
+    },
+    {
+      "path": "examples/ch06"
+    },
+    {
+      "path": "examples/ch07_IF_TIME_regular_expressions"
+    },
+    {
+      "path": "examples/ch08"
+    },
+    {
+      "path": "examples/ch09"
+    },
+    {
+      "path": "examples/ch10"
+    },
+    {
+      "path": "examples/ch12"
+    },
+    {
+      "path": "examples/ch14"
+    },
+    {
+      "path": "examples/ch15"
+    },
+    {
+      "path": "examples/ch16"
+    },
+    {
+      "path": "examples/ch18"
+    },
+    {
+      "path": "examples/ch19"
+    },
+    {
+      "path": "examples/ch19/resources/outputs"
+    }
+  ],
+  "settings": {
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.compile.nullAnalysis.mode": "disabled",
+    "java.debug.settings.onBuildFailureProceed": true,
+    "files.exclude": {
+      "**/.DS_Store": true,
+      "**/__MACOSX": true,
+      "**/*.class": true
+    },
+    "terminal.integrated.env.osx": {
+      "OPENAI_API_KEY": "${env:OPENAI_API_KEY}"
+    },
+    "terminal.integrated.env.linux": {
+      "OPENAI_API_KEY": "${env:OPENAI_API_KEY}"
+    },
+    "terminal.integrated.env.windows": {
+      "OPENAI_API_KEY": "${env:OPENAI_API_KEY}"
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "vscjava.vscode-java-pack",
+      "redhat.java",
+      "vscjava.vscode-java-debug",
+      "vscjava.vscode-java-test"
+    ]
+  }
+}
