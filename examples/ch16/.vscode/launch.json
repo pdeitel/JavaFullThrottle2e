@@ -1,0 +1,40 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Run ColorChooser (JavaFX)",
+      "request": "launch",
+      "mainClass": "ColorChooser",
+      "preLaunchTask": "maven-compile-ch16",
+      "vmArgs": "--module-path \"${workspaceFolder}/target/lib\" --add-modules javafx.controls,javafx.fxml --enable-native-access=javafx.graphics",
+      "classPaths": [
+        "${workspaceFolder}/target/classes"
+      ]
+    },
+    {
+      "type": "java",
+      "name": "Run CoverViewer (JavaFX)",
+      "request": "launch",
+      "mainClass": "CoverViewer",
+      "preLaunchTask": "maven-compile-ch16",
+      "vmArgs": "--module-path \"${workspaceFolder}/target/lib\" --add-modules javafx.controls,javafx.fxml --enable-native-access=javafx.graphics",
+      "classPaths": [
+        "${workspaceFolder}/target/classes"
+      ],
+      "workingDirectory": "${workspaceFolder}/CoverViewer"
+    },
+    {
+      "type": "java",
+      "name": "Run CoverViewerCustomListView (JavaFX)",
+      "request": "launch",
+      "mainClass": "CoverViewerCustomListView",
+      "preLaunchTask": "maven-compile-ch16",
+      "vmArgs": "--module-path \"${workspaceFolder}/target/lib\" --add-modules javafx.controls,javafx.fxml --enable-native-access=javafx.graphics",
+      "classPaths": [
+        "${workspaceFolder}/target/classes"
+      ],
+      "workingDirectory": "${workspaceFolder}/CoverViewerCustomListView"
+    }
+  ]
+}

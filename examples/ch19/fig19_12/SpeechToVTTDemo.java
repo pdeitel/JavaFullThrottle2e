@@ -1,14 +1,15 @@
-// Fig. 19.7: SpeechToTextDemo.java
-// Transcribing audio files to text.
+// Fig. 19.12: SpeechToVTTDemo.java
+// Transcribing the audio track from a video and creating closed captions.
+import java.nio.file.Files;
+import java.nio.file.Path;
 import com.openai.client.OpenAIClient;
 import com.openai.client.okhttp.OpenAIOkHttpClient;
 import com.openai.models.audio.AudioModel;
+import com.openai.models.audio.AudioResponseFormat;
 import com.openai.models.audio.transcriptions.Transcription;
 import com.openai.models.audio.transcriptions.TranscriptionCreateParams;
-import java.nio.file.Files;
-import java.nio.file.Path;
 
-public class SpeechToTextDemo {
+public class SpeechToVTTDemo {
    // create an OpenAIClient object
    private final static OpenAIClient client = 
       OpenAIOkHttpClient.fromEnv();
@@ -18,34 +19,37 @@ public class SpeechToTextDemo {
       Path resourcesPath = Path.of(System.getProperty("user.home"),
          "Documents", "examples", "ch19", "resources");
 
-      // get path to audio file 01_01.m4a
-      Path audioPath = resourcesPath.resolve("01_01.m4a");
+      // get path to audio file ImplicitClass.m4a
+      Path audioPath = resourcesPath.resolve("ImplicitClass.m4a");
 
-      // convert speech to text with OpenAI's whisper-1 model
-      System.out.println("Waiting for Transcription...");
-      String transcript = 
-         speechToText(AudioModel.GPT_4O_TRANSCRIBE, audioPath);
-      System.out.printf("TRANSCRIPT:%n%s%n", transcript);
+      // convert speech to closed captions with OpenAI's whisper-1 model
+      System.out.println(
+         "Transcribing audio and creating VTT captions file...");
+      String captions = speechToVTT(audioPath);
+      System.out.printf("CAPTIONS:%n%s%n", captions);
 
-      // write the transcription to a file, overwriting it if it exists
-      Path transcriptPath = 
-         Path.of(resourcesPath.toString(), "outputs", "01_01.txt");
-      Files.writeString(transcriptPath, transcript);
+      // output the captions to a .vtt file
+      var captionsPath = Path.of(resourcesPath.toString(), 
+         "outputs", "ImplicitClass.vtt");
+      Files.writeString(captionsPath, captions);
    }
-
-   // convert audio to text transcription
-   public static String speechToText(AudioModel model, Path audioPath) {
-      // specify the Audio API parameters for a transcription request
+   
+   // convert audio track of a video into VTT-formatted transcription 
+   // segments and their timestamps for use as closed captions
+   public static String speechToVTT(Path audioPath) {
+      // configure parameters for an Audio API transcription request that
+      // uses whisper-1 to get a VTT-formatted transcription
       var params = TranscriptionCreateParams.builder()
          .file(audioPath)
-         .model(model)
+         .model(AudioModel.WHISPER_1)
+         .responseFormat(AudioResponseFormat.VTT)
          .build();
 
       // initiate the request and wait for the response
-      Transcription transcription = 
+      Transcription transcription =
          client.audio().transcriptions().create(params).asTranscription();
-      
-      return transcription.text(); // return the transcription
+
+      return transcription.text(); // return the transcription's text
    }
 }
 

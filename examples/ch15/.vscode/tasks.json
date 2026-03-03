@@ -1,0 +1,16 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "maven-compile-ch15",
+      "type": "shell",
+      "command": "mvn compile -f \"${workspaceFolder}/pom.xml\" -q",
+      "group": "build",
+      "presentation": {
+        "reveal": "silent",
+        "close": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
