@@ -1,0 +1,187 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Run TextSummarizationDemo",
+      "request": "launch",
+      "mainClass": "TextSummarizationDemo",
+      "preLaunchTask": "maven-compile-ch19",
+      "classPaths": [
+        "${workspaceFolder}/target/classes",
+        "${workspaceFolder}/target/lib/*"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "${env:OPENAI_API_KEY}"
+      }
+    },
+    {
+      "type": "java",
+      "name": "Run SentimentAnalysisDemo",
+      "request": "launch",
+      "mainClass": "SentimentAnalysisDemo",
+      "preLaunchTask": "maven-compile-ch19",
+      "classPaths": [
+        "${workspaceFolder}/target/classes",
+        "${workspaceFolder}/target/lib/*"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "${env:OPENAI_API_KEY}"
+      }
+    },
+    {
+      "type": "java",
+      "name": "Run DescribeImageDemo",
+      "request": "launch",
+      "mainClass": "DescribeImageDemo",
+      "preLaunchTask": "maven-compile-ch19",
+      "classPaths": [
+        "${workspaceFolder}/target/classes",
+        "${workspaceFolder}/target/lib/*"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "${env:OPENAI_API_KEY}"
+      }
+    },
+    {
+      "type": "java",
+      "name": "Run TextTranslationDemo",
+      "request": "launch",
+      "mainClass": "TextTranslationDemo",
+      "preLaunchTask": "maven-compile-ch19",
+      "classPaths": [
+        "${workspaceFolder}/target/classes",
+        "${workspaceFolder}/target/lib/*"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "${env:OPENAI_API_KEY}"
+      }
+    },
+    {
+      "type": "java",
+      "name": "Run CodeGenerationDemo",
+      "request": "launch",
+      "mainClass": "CodeGenerationDemo",
+      "preLaunchTask": "maven-compile-ch19",
+      "classPaths": [
+        "${workspaceFolder}/target/classes",
+        "${workspaceFolder}/target/lib/*"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "${env:OPENAI_API_KEY}"
+      }
+    },
+    {
+      "type": "java",
+      "name": "Run NamedEntityRecognitionDemo",
+      "request": "launch",
+      "mainClass": "NamedEntityRecognitionDemo",
+      "preLaunchTask": "maven-compile-ch19",
+      "classPaths": [
+        "${workspaceFolder}/target/classes",
+        "${workspaceFolder}/target/lib/*"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "${env:OPENAI_API_KEY}"
+      }
+    },
+    {
+      "type": "java",
+      "name": "Run SpeechToTextDemo",
+      "request": "launch",
+      "mainClass": "SpeechToTextDemo",
+      "preLaunchTask": "maven-compile-ch19",
+      "classPaths": [
+        "${workspaceFolder}/target/classes",
+        "${workspaceFolder}/target/lib/*"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "${env:OPENAI_API_KEY}"
+      }
+    },
+    {
+      "type": "java",
+      "name": "Run TextToSpeechDemo",
+      "request": "launch",
+      "mainClass": "TextToSpeechDemo",
+      "preLaunchTask": "maven-compile-ch19",
+      "classPaths": [
+        "${workspaceFolder}/target/classes",
+        "${workspaceFolder}/target/lib/*"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "${env:OPENAI_API_KEY}"
+      }
+    },
+    {
+      "type": "java",
+      "name": "Run ImageGenerationDemo",
+      "request": "launch",
+      "mainClass": "ImageGenerationDemo",
+      "preLaunchTask": "maven-compile-ch19",
+      "classPaths": [
+        "${workspaceFolder}/target/classes",
+        "${workspaceFolder}/target/lib/*"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "${env:OPENAI_API_KEY}"
+      }
+    },
+    {
+      "type": "java",
+      "name": "Run ImageStyleTransferWithPromptDemo",
+      "request": "launch",
+      "mainClass": "ImageStyleTransferWithPromptDemo",
+      "preLaunchTask": "maven-compile-ch19",
+      "classPaths": [
+        "${workspaceFolder}/target/classes",
+        "${workspaceFolder}/target/lib/*"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "${env:OPENAI_API_KEY}"
+      }
+    },
+    {
+      "type": "java",
+      "name": "Run ImageToImageStyleTransferDemo",
+      "request": "launch",
+      "mainClass": "ImageToImageStyleTransferDemo",
+      "preLaunchTask": "maven-compile-ch19",
+      "classPaths": [
+        "${workspaceFolder}/target/classes",
+        "${workspaceFolder}/target/lib/*"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "${env:OPENAI_API_KEY}"
+      }
+    },
+    {
+      "type": "java",
+      "name": "Run SpeechToVTTDemo",
+      "request": "launch",
+      "mainClass": "SpeechToVTTDemo",
+      "preLaunchTask": "maven-compile-ch19",
+      "classPaths": [
+        "${workspaceFolder}/target/classes",
+        "${workspaceFolder}/target/lib/*"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "${env:OPENAI_API_KEY}"
+      }
+    },
+    {
+      "type": "java",
+      "name": "Run ModerationDemo",
+      "request": "launch",
+      "mainClass": "ModerationDemo",
+      "preLaunchTask": "maven-compile-ch19",
+      "classPaths": [
+        "${workspaceFolder}/target/classes",
+        "${workspaceFolder}/target/lib/*"
+      ],
+      "env": {
+        "OPENAI_API_KEY": "${env:OPENAI_API_KEY}"
+      }
+    }
+  ]
+}
